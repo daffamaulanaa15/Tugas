@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/buger"
+    tools:context=".SecondActivity">
+
+    <TextView
+        android:id="@+id/lobby"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="28dp"
+        android:text="Lobby"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/kirimannama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/lobby"
+        android:layout_marginTop="150dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:text="Selamat Datang!"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/lobby"
+        android:layout_marginTop="120dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:text="Mau Makan Apa Hari Ini?"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/lobby"
+        android:layout_marginTop="190dp"/>
+
+    <Button
+        android:id="@+id/pesan"
+        android:onClick="PesanMakan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="   +   Tambah Pesanan"
+        android:backgroundTint="@color/kuning"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/lobby"
+        android:layout_marginTop="430dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

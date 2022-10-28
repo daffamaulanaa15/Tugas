@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Kalkulator"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PANJANG    :  "
+        android:textSize="16dp"/>
+
+    <EditText
+        android:id="@+id/panjang"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LEBAR          :   "
+        android:textSize="16dp"/>
+
+    <EditText
+        android:id="@+id/lebar"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ALAS            :   "
+            android:textSize="16dp"/>
+
+        <EditText
+            android:id="@+id/alas"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TINGGI         :   "
+            android:textSize="16dp"/>
+
+        <EditText
+            android:id="@+id/tinggi"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="JARI-JARI    :   "
+            android:textSize="16dp"/>
+
+        <EditText
+            android:id="@+id/jarijari"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="LUAS            :"
+            android:textSize="16dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/luas"
+            android:layout_width="120dp"
+            android:textSize="20dp"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="KELILING     :"
+            android:textSize="16dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/keliling"
+            android:layout_width="120dp"
+            android:textSize="20dp"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/persegi"
+        android:onClick="hitungpersegi"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:text="PERSEGI"
+        android:textColor="@color/merah"
+        android:backgroundTint="@color/hitam"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/segitiga"
+        android:onClick="hitungsegitiga"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:text="Segitiga"
+        android:textColor="@color/merah"
+        android:backgroundTint="@color/hitam"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/lingkaran"
+        android:onClick="hitunglingkaran"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:text="LINGKARAN"
+        android:textColor="@color/merah"
+        android:backgroundTint="@color/hitam"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
+
+    <Button
+            android:id="@+id/tmblclear"
+            android:onClick="Clear"
+            android:layout_width="100dp"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:text="  CLEAR  "
+            android:textColor="@color/kuning"
+            android:backgroundTint="@color/hitam"
+            android:layout_height="90dp"/>
+
+
+    </LinearLayout>
+
